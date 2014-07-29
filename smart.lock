@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "collection2": {},
-      "autoform": {}
+      "autoform": {},
+      "s-alert": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.16.1",
         "commit": "34a447fd3a1b3164c78f865aabbac3ddc2d033fb"
+      },
+      "s-alert": {
+        "git": "https://github.com/juliancwirko/meteor-s-alert",
+        "tag": "v0.0.1",
+        "commit": "dd7e702e1c78b2980466467723d674cab6a5ed4e"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
