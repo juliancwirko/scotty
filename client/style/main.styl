@@ -1,6 +1,23 @@
+// must have
 @import '../../packages/jeet'
-@import 'mixins.import'
 
+// custom imports
+@import 'mixins.import'
+@import 'variables.import'
+
+// media queries using rupture mixins:
+    // +above(641px)
+    // +above(1025px)
+    // +above(1441px)
+    // +above(1921px)
+    // rupture docs: https://github.com/jenius/rupture
+// or standard media queries with em or px
+    // @media only screen and (min-width: 40.063em) /* min-width 641px */
+    // @media only screen and (min-width: 64.063em) /* min-width 1025px */
+    // @media only screen and (min-width: 90.063em) /* min-width 1441px */
+    // @media only screen and (min-width: 120.063em) /* min-width 1921px */
+
+// uncomment edit function to see grid borders 
 // edit()
 
 *
@@ -23,21 +40,22 @@ header, footer, main
             padding-right rem-calc(10)
             .fa
                 margin-right rem-calc(3)
+                color color_test
 
 // only for testing
 section
     center(1400px)
     aside, article
         stack()
-    @media only screen and (min-width: 40.063em)
+    +above(40.063em)
         aside
             col(1/3)
         article
             col(2/3)
 
-
-// media queries
-// @media only screen and (min-width: 40.063em) /* min-width 641px */
-// @media only screen and (min-width: 64.063em) /* min-width 1025px */
-// @media only screen and (min-width: 90.063em) /* min-width 1441px */
-// @media only screen and (min-width: 120.063em) /* min-width 1921px */
+          
+// BEMing with Stylus example:
+// .foo
+//     color red
+//     &__bar
+//         color blue

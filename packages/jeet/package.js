@@ -3,7 +3,8 @@ Package.describe({
 });
 
 Npm.depends({
-  "jeet": "5.3.0"
+    'rupture': '0.3.0',
+    'jeet': '5.3.0'
 });
 
 Package.on_use(function(api) {
