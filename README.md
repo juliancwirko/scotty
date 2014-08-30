@@ -15,7 +15,6 @@
 ##### How to run:
 ````
 git clone
-mrt update
 meteor
 ````
 
