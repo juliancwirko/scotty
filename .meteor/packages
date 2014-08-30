@@ -4,11 +4,10 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-stylus
+juliancwirko:s-jeet
 accounts-password
 iron:router
 juliancwirko:s-alert
 aldeed:autoform
 aldeed:collection2
-juliancwirko:s-jeet
-
+stylus
