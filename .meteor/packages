@@ -4,10 +4,11 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-iron-router
-collection2
-autoform
-jeet
 stylus
 accounts-password
-s-alert
+iron:router
+juliancwirko:s-alert
+aldeed:autoform
+aldeed:collection2
+juliancwirko:s-jeet
+
