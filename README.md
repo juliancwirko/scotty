@@ -15,8 +15,12 @@
 ##### How to run:
 ````
 git clone
+cd scotty
 meteor
 ````
+Then you should uncomment main jeet stylus file import in ````client/style/style.styl```` :
+
+````@import '../../.meteor/local/build/programs/web.browser/packages/juliancwirko:s-jeet/index.styl'````
 
 #### TODO
 
