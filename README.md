@@ -14,7 +14,7 @@
 
 ##### How to run:
 ````
-git clone
+git clone https://github.com/juliancwirko/scotty.git
 cd scotty
 meteor
 ````
