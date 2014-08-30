@@ -2,7 +2,7 @@
 
 (this is a work in progress version..)
 
-### Meteor boilerplate with:
+### Meteor 0.9 boilerplate with:
 
 - Jeet Grid System (on Stylus) : [jeet.gs](http://jeet.gs) (!!! love it)
 - Rupture media queries mixins : [https://github.com/jenius/rupture](https://github.com/jenius/rupture)
