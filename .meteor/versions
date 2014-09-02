@@ -28,7 +28,7 @@ iron:router@0.9.1
 jquery@1.0.0
 json@1.0.0
 juliancwirko:s-alert@0.0.3
-juliancwirko:s-jeet@0.0.4
+juliancwirko:s-jeet@0.1.0
 livedata@1.0.7
 localstorage@1.0.0
 logging@1.0.2
@@ -52,7 +52,6 @@ spacebars-compiler@1.0.1
 spacebars@1.0.0
 srp@1.0.0
 standard-app-packages@1.0.0
-stylus@1.0.3
 templating@1.0.4
 ui@1.0.0
 underscore@1.0.0
