@@ -7,7 +7,7 @@ standard-app-packages
 accounts-password
 iron:router
 juliancwirko:s-alert
-aldeed:autoform
 juliancwirko:s-jeet
 aldeed:collection2
+aldeed:autoform
 
