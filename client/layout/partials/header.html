@@ -1,11 +1,21 @@
 <template name="header">
     <header>
-        <nav class="header__menu">
-            <ul>
-                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'index.view'}}">index</a></li>
-                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'subpage.view'}}">subpage</a></li>
-            </ul>
-        </nav>
+        {{> mainMenu}}
         <h1>This is header</h1>
     </header>
+</template>
+
+<template name="mainMenu">
+    <nav class="header__menu">
+        <ul>
+            <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'index.view'}}">index</a></li>
+            <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'subpage.view'}}">subpage</a></li>
+            {{#if currentUser}}
+                <li><i class="fa fa-caret-right"></i> <a href="#" class="js-logout">Logout</a></li>
+            {{else}}
+                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'login.view'}}">Login</a></li>
+                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'register.view'}}">Register</a></li>
+            {{/if}}
+        </ul>
+    </nav>
 </template>
