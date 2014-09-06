@@ -19,6 +19,11 @@ cd scotty
 meteor
 ````
 
+### Scotty parts - You can use it but you don't have to :)
+- [s-jeet](https://github.com/juliancwirko/meteor-s-jeet) - Jeet and Stylus (Grid system on Stylus)
+- [s-alert](https://github.com/juliancwirko/meteor-s-alert) - Notifications
+- [more soon..]
+
 #### TODO
 
 - login/register system
