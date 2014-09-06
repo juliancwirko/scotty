@@ -23,11 +23,12 @@ meteor
 #### (standard Meteor packages)
 - [s-jeet](https://github.com/juliancwirko/meteor-s-jeet) - Jeet and Stylus (Grid system on Stylus)
 - [s-alert](https://github.com/juliancwirko/meteor-s-alert) - Notifications
+- [s-id](https://github.com/juliancwirko/meteor-s-id) login/register
 - [more soon..]
 
 #### TODO
 
-- login/register system
+- <s>login/register system</s> (It will be developed still)
 - cleaner UI example
 - UI components and styles
 - jeet/stylus starter - better stylus structure and addons (stylus BEM)
