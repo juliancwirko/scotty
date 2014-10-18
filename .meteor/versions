@@ -1,7 +1,7 @@
 accounts-base@1.1.2
 accounts-password@1.0.3
 aldeed:autoform@3.2.0
-aldeed:collection2@2.1.0
+aldeed:collection2@2.2.0
 aldeed:simple-schema@1.0.3
 application-configuration@1.0.3
 autoupdate@1.1.2
@@ -33,7 +33,7 @@ jquery@1.0.1
 json@1.0.1
 juliancwirko:s-alert@0.0.3
 juliancwirko:s-id@0.0.2
-juliancwirko:s-jeet@0.2.2
+juliancwirko:s-jeet@0.2.3
 livedata@1.0.11
 localstorage@1.0.1
 logging@1.0.4
