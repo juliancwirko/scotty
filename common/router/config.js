@@ -13,5 +13,6 @@ if (Meteor.isClient) {
         if (title) {
             document.title = title;
         }
+        this.next();
     });
 }

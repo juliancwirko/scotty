@@ -1,0 +1,19 @@
+// this is only an example of meteor settings files
+// s-id accounts with social oAuth services requires it
+//
+
+// {
+//     "github": {
+//         "clientId": "{your github API client id here}",
+//         "secret": "{your google API secret key here}"
+//     },
+//     "google": {
+//         "clientId": "{your google API client id here}",
+//         "secret": "{your google API secret key here}"
+//     },
+//     "twitter": {
+//         "consumerKey": "{your twitter API customer key here}",
+//         "secret": "{your twitter API secret key here}"
+//     }
+// }
+
