@@ -19,7 +19,7 @@ meteor
 ````
 
 ### Scotty parts - You can use it but you don't have to :)
-#### (standard Meteor packages)
+##### (included by default (standard Meteor packages))
 - [s-jeet](https://github.com/juliancwirko/meteor-s-jeet) - Jeet and Stylus (Grid system on Stylus)
 - [s-alert](https://github.com/juliancwirko/meteor-s-alert) - Notifications
 - [s-id](https://github.com/juliancwirko/meteor-s-id) login/register - see s-id readme for social oAuth login/register config
