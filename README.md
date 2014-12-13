@@ -1,19 +1,20 @@
 ## "Beam me up, Scotty!" ;)
 
-### Meteor 1.0 boilerplate with:
+### Meteor 1.0.* boilerplate with:
 
 - Jeet Grid System (on Stylus) : [jeet.gs](http://jeet.gs) (!!! love it)
 - Rupture media queries mixins : [https://github.com/jenius/rupture](https://github.com/jenius/rupture)
-- Iron Router
-- Collection2
-- Simple Schema
-- Autoform
-- Font Awesome
+- Iron Router : [https://github.com/EventedMind/iron-router](https://github.com/EventedMind/iron-router)
+- Collection2 : [https://github.com/aldeed/meteor-collection2](https://github.com/aldeed/meteor-collection2)
+- Simple Schema : [https://github.com/aldeed/meteor-simple-schema](https://github.com/aldeed/meteor-simple-schema)
+- Autoform : [https://github.com/aldeed/meteor-autoform](https://github.com/aldeed/meteor-autoform)
+- Font Awesome : [http://fontawesome.io/](http://fontawesome.io/)
 
 ##### How to run:
 ````
 git clone https://github.com/juliancwirko/scotty.git
 cd scotty
+rm .git
 meteor
 ````
 
