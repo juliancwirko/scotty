@@ -39,8 +39,8 @@ iron:router@1.0.7
 iron:url@1.0.7
 jquery@1.11.3
 json@1.0.2
-juliancwirko:s-alert@0.0.4
-juliancwirko:s-id@0.1.0
+juliancwirko:s-alert@1.0.0
+juliancwirko:s-id@0.1.2
 juliancwirko:s-jeet@0.2.7
 launch-screen@1.0.1
 livedata@1.0.12
