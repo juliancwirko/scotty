@@ -1,5 +1,5 @@
 Router.configure({
-    layoutTemplate: 'mainLayout',
+    layoutTemplate: 'layout',
     notFoundTemplate: 'notFoundPage',
     loadingTemplate: 'loadingPage',
     templateNameConverter: 'camelCase',
@@ -7,12 +7,10 @@ Router.configure({
 });
 
 // helper functions
-if (Meteor.isClient) {
-    Router.onBeforeAction(function () {
-        var title = Session.get('siteTitle');
-        if (title) {
-            document.title = title;
-        }
-        this.next();
-    });
-}
+Router.onBeforeAction(function () {
+    var title = Session.get('siteTitle');
+    if (title) {
+        document.title = title;
+    }
+    this.next();
+});

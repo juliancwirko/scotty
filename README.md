@@ -20,7 +20,7 @@ meteor
 
 ### Scotty parts - You can use it but you don't have to :)
 ##### (included by default (standard Meteor packages))
-- [s-jeet](https://github.com/juliancwirko/meteor-s-jeet) - Jeet and Stylus (Grid system on Stylus)
+- [s-jeet](https://github.com/juliancwirko/meteor-s-jeet) - Jeet and Stylus (Grid system on Stylus) (instead Jeet you can use [s-grid](https://github.com/juliancwirko/meteor-s-grid) flexbox grid. But it is in a early stage.. but it will be a part of Scotty someday)
 - [s-alert](https://github.com/juliancwirko/meteor-s-alert) - Notifications
 - [s-id](https://github.com/juliancwirko/meteor-s-id) login/register - see s-id readme for social oAuth login/register config
 - [more soon..]
