@@ -4,7 +4,7 @@ accounts-google@1.0.3
 accounts-oauth@1.1.3
 accounts-password@1.0.6
 accounts-twitter@1.0.3
-aldeed:autoform@4.2.2
+aldeed:autoform@5.0.2
 aldeed:collection2@2.3.2
 aldeed:simple-schema@1.3.0
 application-configuration@1.0.4
@@ -39,7 +39,7 @@ iron:router@1.0.7
 iron:url@1.0.7
 jquery@1.11.3
 json@1.0.2
-juliancwirko:s-alert@1.0.0
+juliancwirko:s-alert@1.1.0
 juliancwirko:s-id@0.1.2
 juliancwirko:s-jeet@0.2.7
 launch-screen@1.0.1
