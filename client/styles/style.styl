@@ -1,9 +1,7 @@
-// must have - main stylus jeet grid system import + rupture
 
-// you can add nib if you want
-// @import 'nib'
-@import 'jeet'
-@import 'rupture'
+@import 's-grid-settings'
+@import 's-grid-functions'
+@import 's-grid-classes' /* optional - only if you want to use helper classes */
 
 // custom imports
 @import 'mixins.import'
@@ -21,7 +19,7 @@
     // @media only screen and (min-width: 90.063em) /* min-width 1441px */
     // @media only screen and (min-width: 120.063em) /* min-width 1921px */
 
-// uncomment edit function to see grid borders 
+// uncomment edit function to see grid borders
 // edit()
 
 *
@@ -39,7 +37,7 @@ header, footer, main
         list-style-type none
         margin 0
         padding 0
-        li 
+        li
             display inline
             padding-right rem-calc(10)
             .fa
@@ -48,18 +46,13 @@ header, footer, main
 
 // only for testing
 section
-    center(1400px)
+    max-width rem-calc(1400)
+    margin 0 auto
+    grid()
     aside, article
-        stack()
+        cell(1, 1)
     +above(40.063em)
         aside
-            col(1/3)
+            cell(1, 3)
         article
-            col(2/3)
-
-          
-// BEMing with Stylus example:
-// .foo
-//     color red
-//     &__bar
-//         color blue
+            cell(2, 3)
