@@ -1,22 +1,61 @@
-Router.map(function() {
-    this.route('index.view', {
-        path: '/',
-        data: function () {
-            Session.set('siteTitle', 'This is index view!');
-            return {
-                asideTestData: 'test test string',
-                articleTestData: 'test test article'
-            };
-        }
-    });
-    this.route('subpage.view', {
-        path: '/subpage',
-        data: function () {
-            Session.set('siteTitle', 'This is subpage view!');
-            return {
-                asideSubpageTestData: 'subpage test string',
-                articleSubpageTestData: 'subpage test article'
-            };
-        }
-    });
+'use strict';
+
+// check out FlowRouter: https://atmospherejs.com/meteorhacks/flow-router
+
+FlowRouter.route('/', {
+    name: 'indexView',
+    subscriptions: function () { // params
+        // example: this.register('indexSubs', Meteor.subscribe('indexDemo'));
+    },
+    action: function () { // params
+        FlowLayout.render('layout', {main: 'indexView'});
+    }
+});
+
+FlowRouter.route('/subpage', {
+    name: 'subpageView',
+    subscriptions: function () { // params
+        // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
+    },
+    action: function () { // params
+        FlowLayout.render('layout', {main: 'subpageView'});
+    }
+});
+
+// not found route
+
+FlowRouter.notFound = {
+    // Subscriptions registered here don't have Fast Render support.
+    subscriptions: function () {
+
+    },
+    action: function () {
+        FlowLayout.render('layout', {main: 'notFoundPage'});
+    }
+};
+
+// sId routes config
+FlowRouter.route('/login', {
+    name: 'sIdLoginView',
+    action: function () {
+        FlowLayout.render('layout', {main: 'sIdLoginView'});
+    }
+});
+FlowRouter.route('/register', {
+    name: 'sIdRegisterView',
+    action: function () {
+        FlowLayout.render('layout', {main: 'sIdRegisterView'});
+    }
+});
+FlowRouter.route('/forgot-password', {
+    name: 'sIdForgotPasswordView',
+    action: function () {
+        FlowLayout.render('layout', {main: 'sIdForgotPasswordView'});
+    }
+});
+FlowRouter.route('/reset-password', {
+    name: 'sIdResetPasswordView',
+    action: function () {
+        FlowLayout.render('layout', {main: 'sIdResetPasswordView'});
+    }
 });

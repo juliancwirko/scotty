@@ -1,13 +1,13 @@
 <template name="mainMenu">
-    <nav class="header__menu">
+    <nav class="header-menu">
         <ul>
-            <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'index.view'}}">index</a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'subpage.view'}}">subpage</a></li>
+            <li><a href="/">Index</a></li>
+            <li><a href="/subpage">Subpage</a></li>
             {{#if currentUser}}
-                <li><i class="fa fa-caret-right"></i> <a href="#" class="js-logout">Logout</a></li>
+                <li><a href="#" class="js-logout">Logout</a></li>
             {{else}}
-                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'login.view'}}">Login</a></li>
-                <li><i class="fa fa-caret-right"></i> <a href="{{pathFor 'register.view'}}">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
             {{/if}}
         </ul>
     </nav>

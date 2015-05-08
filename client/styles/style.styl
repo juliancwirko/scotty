@@ -22,37 +22,7 @@
 // uncomment edit function to see grid borders
 // edit()
 
-*
-    box-sizing border-box
-html, body
-    padding 0
-    margin 0
+// demo Scotty theme
 
-header, footer, main
-    padding rem-calc(25)
+@import 'demo-theme.import'
 
-// header section
-.header__menu
-    ul
-        list-style-type none
-        margin 0
-        padding 0
-        li
-            display inline
-            padding-right rem-calc(10)
-            .fa
-                margin-right rem-calc(3)
-                color color_test
-
-// only for testing
-section
-    max-width rem-calc(1400)
-    margin 0 auto
-    grid()
-    aside, article
-        cell(1, 1)
-    +above(40.063em)
-        aside
-            cell(1, 3)
-        article
-            cell(2, 3)
