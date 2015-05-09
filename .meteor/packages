@@ -17,3 +17,9 @@ juliancwirko:s-alert-scale
 momentjs:moment
 aldeed:simple-schema@1.3.3
 meteorhacks:fast-render
+matb33:collection-hooks
+email
+reactive-var
+spiderable
+audit-argument-checks
+ongoworks:security
