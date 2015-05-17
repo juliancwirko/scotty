@@ -31,7 +31,10 @@ Meteor.startup(function () {
             submitBtnLabel: 'Set New!'
         },
         onLogged: function () {
-            FlowRouter.go('/');
+            var router = FlowRouter.current();
+            if (router && router.route.name !== 'secretPage') {
+                FlowRouter.go('/');
+            }
         },
         onRegistered: function () {
             FlowRouter.go('/');

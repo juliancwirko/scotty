@@ -22,6 +22,16 @@ FlowRouter.route('/subpage', {
     }
 });
 
+FlowRouter.route('/secret', {
+    name: 'secretPage',
+    subscriptions: function () { // params
+        // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
+    },
+    action: function () { // params
+        FlowLayout.render('layout', {main: 'secretPage'});
+    }
+});
+
 // not found route
 
 FlowRouter.notFound = {
