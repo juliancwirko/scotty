@@ -39,7 +39,7 @@
     },
     "globals": {
         "sId": false,
-        "sAlert": false,
+        "sAlert": true,
         "FlowRouter": false,
         "FlowLayout": false
     }
