@@ -1,19 +1,26 @@
 // this is only an example of meteor settings files
 // s-id accounts with social oAuth services requires it
+// read more: http://s-id.meteor.com
 //
 
 // {
-//     "github": {
-//         "clientId": "{your github API client id here}",
-//         "secret": "{your google API secret key here}"
-//     },
-//     "google": {
-//         "clientId": "{your google API client id here}",
-//         "secret": "{your google API secret key here}"
-//     },
-//     "twitter": {
-//         "consumerKey": "{your twitter API customer key here}",
-//         "secret": "{your twitter API secret key here}"
+//     "private": {
+//         "github": {
+//             "clientId": "{your github API client id here}",
+//             "secret": "{your google API secret key here}"
+//         },
+//         "google": {
+//             "clientId": "{your google API client id here}",
+//             "secret": "{your google API secret key here}"
+//         },
+//         "twitter": {
+//             "consumerKey": "{your twitter API customer key here}",
+//             "secret": "{your twitter API secret key here}"
+//         },
+//         "facebook": {
+//             "appId": "{your facebook API app id here}",
+//             "secret": "{your facebook API secret key here}"
+//         }
 //     }
 // }
 

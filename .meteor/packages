@@ -8,7 +8,6 @@ accounts-password
 aldeed:collection2
 
 juliancwirko:s-grid
-juliancwirko:s-id@1.0.2
 fortawesome:fontawesome
 meteorhacks:flow-router
 meteorhacks:flow-layout
@@ -23,3 +22,4 @@ reactive-var
 spiderable
 audit-argument-checks
 ongoworks:security
+juliancwirko:s-id
