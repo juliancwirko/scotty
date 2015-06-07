@@ -2,6 +2,15 @@
 
 // check out FlowRouter: https://atmospherejs.com/meteorhacks/flow-router
 
+var clearMetaTags = function () {
+    Meta.setTitle('');
+    Meta.unset('og:title');
+    Meta.unset('og:description');
+};
+
+// we use here global triggers for Flow Router to clear meta tags using Blaze Meta package
+FlowRouter.triggers.enter([clearMetaTags]);
+
 FlowRouter.route('/', {
     name: 'indexView',
     subscriptions: function () { // params
@@ -18,6 +27,16 @@ FlowRouter.route('/subpage', {
         // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
     },
     action: function () { // params
+        var pageTitle = 'This is subpage view title';
+
+        // see more in the client/settings/seo.js
+        // you can also unset your meta by Meta.unset('og:title');
+        // you can unset your all metatags using Flow Router triggers (like we did here using global triggers ...above)
+
+        Meta.setTitle(pageTitle); // you get: <title>This is subpage view title | Aye, That's me</title>
+        Meta.set('og:title', pageTitle); // you get: <meta property="og:title" content="This is subpage view title">
+        Meta.set('og:description', 'This is subpage view title'); // you get: <meta property="og:description" content="This is subpage view title">
+
         FlowLayout.render('layout', {main: 'subpageView'});
     }
 });

@@ -26,6 +26,7 @@
 - Roles: [https://atmospherejs.com/alanning/roles](https://atmospherejs.com/alanning/roles)
 - Security: [https://atmospherejs.com/ongoworks/security](https://atmospherejs.com/ongoworks/security)
 - Simple Schema: [https://github.com/aldeed/meteor-simple-schema](https://github.com/aldeed/meteor-simple-schema)
+- Blaze Meta (SEO meta tags): [https://atmospherejs.com/yasinuslu/blaze-meta](https://atmospherejs.com/yasinuslu/blaze-meta)
 - Moment: [https://atmospherejs.com/momentjs/moment](https://atmospherejs.com/momentjs/moment)
 - Font Awesome: [http://fontawesome.io/](http://fontawesome.io/)
 - email [https://atmospherejs.com/meteor/email](https://atmospherejs.com/meteor/email)

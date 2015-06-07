@@ -41,6 +41,7 @@
         "sId": false,
         "sAlert": true,
         "FlowRouter": false,
-        "FlowLayout": false
+        "FlowLayout": false,
+        "Meta": false
     }
 }
