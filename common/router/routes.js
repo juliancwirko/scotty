@@ -1,15 +1,63 @@
 'use strict';
 
-// check out FlowRouter: https://atmospherejs.com/meteorhacks/flow-router
+// helper meta tags functions used in Flow Router action functions
 
 var clearMetaTags = function () {
     Meta.setTitle('');
     Meta.unset('og:title');
     Meta.unset('og:description');
+    Meta.unset('og:url');
+    Meta.unset('og:image');
+    Meta.unset('twitter:title');
+    Meta.unset('twitter:description');
+    Meta.unset('twitter:url');
+    Meta.unset('twitter:image');
+};
+
+var setMetaTags = function (url, title, desc, image) {
+    Meta.setTitle(title);
+    Meta.set({
+        name: 'name',
+        property: 'description',
+        content: desc
+    });
+
+    Meta.set('og:title', title);
+    Meta.set('og:description', desc);
+    Meta.set('og:url', url);
+    Meta.set('og:image', image);
+
+    Meta.set({
+        name: 'name',
+        property: 'twitter:card',
+        content: 'summary'
+    });
+    Meta.set({
+        name: 'name',
+        property: 'twitter:title',
+        content: title
+    });
+    Meta.set({
+        name: 'name',
+        property: 'twitter:description',
+        content: desc
+    });
+    Meta.set({
+        name: 'name',
+        property: 'twitter:url',
+        content: url
+    });
+    Meta.set({
+        name: 'name',
+        property: 'twitter:image',
+        content: image
+    });
 };
 
 // we use here global triggers for Flow Router to clear meta tags using Blaze Meta package
 FlowRouter.triggers.enter([clearMetaTags]);
+
+// check out FlowRouter: https://atmospherejs.com/meteorhacks/flow-router
 
 FlowRouter.route('/', {
     name: 'indexView',
@@ -27,15 +75,16 @@ FlowRouter.route('/subpage', {
         // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
     },
     action: function () { // params
-        var pageTitle = 'This is subpage view title';
+        var currentUrl = Meteor.absoluteUrl() + FlowRouter.current().path.substring(1);
+        var currentTitle = 'Demo subpage title';
+        var currentDescription = 'Demo subpage description';
+        var currentImage = '';
 
         // see more in the client/settings/seo.js
         // you can also unset your meta by Meta.unset('og:title');
         // you can unset your all metatags using Flow Router triggers (like we did here using global triggers ...above)
 
-        Meta.setTitle(pageTitle); // you get: <title>This is subpage view title | Aye, That's me</title>
-        Meta.set('og:title', pageTitle); // you get: <meta property="og:title" content="This is subpage view title">
-        Meta.set('og:description', 'This is subpage view title'); // you get: <meta property="og:description" content="This is subpage view title">
+        setMetaTags(currentUrl, currentTitle, currentDescription, currentImage);
 
         FlowLayout.render('layout', {main: 'subpageView'});
     }
@@ -47,6 +96,13 @@ FlowRouter.route('/secret', {
         // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
     },
     action: function () { // params
+        var currentUrl = Meteor.absoluteUrl() + FlowRouter.current().path.substring(1);
+        var currentTitle = 'Demo secret title';
+        var currentDescription = 'Demo secret description';
+        var currentImage = '';
+
+        setMetaTags(currentUrl, currentTitle, currentDescription, currentImage);
+
         FlowLayout.render('layout', {main: 'secretPage'});
     }
 });
