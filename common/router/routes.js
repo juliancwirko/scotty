@@ -75,7 +75,7 @@ FlowRouter.route('/subpage', {
         // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
     },
     action: function () { // params
-        var currentUrl = Meteor.absoluteUrl() + FlowRouter.current().path.substring(1);
+        var currentUrl = Meteor.absoluteUrl() + this.path.substring(1);
         var currentTitle = 'Demo subpage title';
         var currentDescription = 'Demo subpage description';
         var currentImage = '';
@@ -96,7 +96,7 @@ FlowRouter.route('/secret', {
         // example: this.register('subpageSubs', Meteor.subscribe('subpageDemo', params.subId));
     },
     action: function () { // params
-        var currentUrl = Meteor.absoluteUrl() + FlowRouter.current().path.substring(1);
+        var currentUrl = Meteor.absoluteUrl() + this.path.substring(1);
         var currentTitle = 'Demo secret title';
         var currentDescription = 'Demo secret description';
         var currentImage = '';
