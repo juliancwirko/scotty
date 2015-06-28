@@ -53,6 +53,5 @@ meteor
 - [sAlert](http://s-alert.meteor.com) - Notifications
 - [sid](http://s-id.meteor.com) login/register - see s-id readme for social oAuth login/register config
 - [sImageBox](http://s-image-box.meteor.com) Image lightbox / popup with animations
-
 - [more UI and other components soon..]
 
