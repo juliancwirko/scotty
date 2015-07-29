@@ -65,7 +65,7 @@ FlowRouter.route('/', {
         // example: this.register('indexSubs', Meteor.subscribe('indexDemo'));
     },
     action: function () { // params
-        FlowLayout.render('layout', {main: 'indexView'});
+        BlazeLayout.render('layout', {main: 'indexView'});
     }
 });
 
@@ -86,7 +86,7 @@ FlowRouter.route('/subpage', {
 
         setMetaTags(currentUrl, currentTitle, currentDescription, currentImage);
 
-        FlowLayout.render('layout', {main: 'subpageView'});
+        BlazeLayout.render('layout', {main: 'subpageView'});
     }
 });
 
@@ -103,7 +103,7 @@ FlowRouter.route('/secret', {
 
         setMetaTags(currentUrl, currentTitle, currentDescription, currentImage);
 
-        FlowLayout.render('layout', {main: 'secretPage'});
+        BlazeLayout.render('layout', {main: 'secretPage'});
     }
 });
 
@@ -115,7 +115,7 @@ FlowRouter.notFound = {
 
     },
     action: function () {
-        FlowLayout.render('layout', {main: 'notFoundPage'});
+        BlazeLayout.render('layout', {main: 'notFoundPage'});
     }
 };
 
@@ -123,24 +123,24 @@ FlowRouter.notFound = {
 FlowRouter.route('/login', {
     name: 'sIdLoginView',
     action: function () {
-        FlowLayout.render('layout', {main: 'sIdLoginView'});
+        BlazeLayout.render('layout', {main: 'sIdLoginView'});
     }
 });
 FlowRouter.route('/register', {
     name: 'sIdRegisterView',
     action: function () {
-        FlowLayout.render('layout', {main: 'sIdRegisterView'});
+        BlazeLayout.render('layout', {main: 'sIdRegisterView'});
     }
 });
 FlowRouter.route('/forgot-password', {
     name: 'sIdForgotPasswordView',
     action: function () {
-        FlowLayout.render('layout', {main: 'sIdForgotPasswordView'});
+        BlazeLayout.render('layout', {main: 'sIdForgotPasswordView'});
     }
 });
 FlowRouter.route('/reset-password', {
     name: 'sIdResetPasswordView',
     action: function () {
-        FlowLayout.render('layout', {main: 'sIdResetPasswordView'});
+        BlazeLayout.render('layout', {main: 'sIdResetPasswordView'});
     }
 });

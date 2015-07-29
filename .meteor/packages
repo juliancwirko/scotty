@@ -9,8 +9,6 @@ aldeed:collection2
 
 juliancwirko:s-grid
 fortawesome:fontawesome
-meteorhacks:flow-router
-meteorhacks:flow-layout
 juliancwirko:s-alert
 juliancwirko:s-alert-scale
 momentjs:moment
@@ -25,3 +23,5 @@ ongoworks:security
 juliancwirko:s-id
 yasinuslu:blaze-meta
 juliancwirko:s-image-box
+kadira:flow-router
+kadira:blaze-layout

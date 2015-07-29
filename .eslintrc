@@ -42,7 +42,7 @@
         "sAlert": true,
         "sImageBox": true,
         "FlowRouter": false,
-        "FlowLayout": false,
+        "BlazeLayout": false,
         "Meta": false
     }
 }
