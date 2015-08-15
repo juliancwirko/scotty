@@ -46,6 +46,10 @@ rm .git
 meteor
 ````
 
+##### Config
+
+Go and search for all `settings` folder. You will find all config files with comments. Soon there will be a blog post about it.
+
 ### Scotty parts
 ##### (included by default, you can remove it if you want)
 

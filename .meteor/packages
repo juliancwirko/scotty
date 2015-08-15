@@ -20,8 +20,8 @@ reactive-var
 spiderable
 audit-argument-checks
 ongoworks:security
-juliancwirko:s-id
 yasinuslu:blaze-meta
 juliancwirko:s-image-box
 kadira:flow-router
 kadira:blaze-layout
+juliancwirko:s-id
