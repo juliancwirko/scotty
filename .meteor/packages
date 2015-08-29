@@ -9,8 +9,6 @@ aldeed:collection2
 
 juliancwirko:s-grid
 fortawesome:fontawesome
-juliancwirko:s-alert
-juliancwirko:s-alert-scale
 momentjs:moment
 aldeed:simple-schema@1.3.3
 meteorhacks:fast-render
@@ -25,3 +23,5 @@ juliancwirko:s-image-box
 kadira:flow-router
 kadira:blaze-layout
 juliancwirko:s-id
+juliancwirko:s-alert
+juliancwirko:s-alert-scale
