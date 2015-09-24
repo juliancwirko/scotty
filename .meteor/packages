@@ -7,7 +7,6 @@ standard-app-packages
 accounts-password
 aldeed:collection2
 
-juliancwirko:s-grid
 fortawesome:fontawesome
 momentjs:moment
 aldeed:simple-schema@1.3.3
@@ -25,3 +24,5 @@ kadira:blaze-layout
 juliancwirko:s-id
 juliancwirko:s-alert
 juliancwirko:s-alert-scale
+standard-minifiers
+juliancwirko:s-grid
