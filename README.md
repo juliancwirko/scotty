@@ -16,7 +16,7 @@
 
 ![](https://i.imgflip.com/l909e.jpg)
 
-### What's in Meteor 1.1.* boilerplate:
+### What's in Meteor 1.2.* boilerplate:
 
 - sGrid System (Flexbox on Stylus): [s-grid.meteor.com](http://s-grid.meteor.com)
 - sAlert: [s-alert.meteor.com](http://s-alert.meteor.com)
