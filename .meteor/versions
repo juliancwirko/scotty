@@ -47,11 +47,11 @@ id-map@1.0.4
 jquery@1.11.4
 juliancwirko:s-alert@3.1.1
 juliancwirko:s-alert-scale@3.1.0
-juliancwirko:s-grid@2.1.0
+juliancwirko:s-grid@2.2.0
 juliancwirko:s-id@3.1.0
 juliancwirko:s-image-box@0.1.1
 kadira:blaze-layout@2.2.0
-kadira:flow-router@2.7.0
+kadira:flow-router@2.8.0
 launch-screen@1.0.4
 livedata@1.0.15
 localstorage@1.0.5
