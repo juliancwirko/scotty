@@ -19,10 +19,12 @@ audit-argument-checks
 ongoworks:security
 yasinuslu:blaze-meta
 juliancwirko:s-image-box
-kadira:flow-router
 kadira:blaze-layout
 juliancwirko:s-id
 juliancwirko:s-alert
 juliancwirko:s-alert-scale
 standard-minifiers
 juliancwirko:s-grid
+kadira:flow-router
+cosmos:browserify@0.10.0
+mdg:validation-error@0.5.1
