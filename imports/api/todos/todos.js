@@ -6,12 +6,12 @@ export const Todos = new Mongo.Collection('Todos');
 Todos.deny({
   insert() { return true; },
   update() { return true; },
-  remove() { return true; }
+  remove() { return true; },
 });
 
 Todos.schema = new SimpleSchema({
   message: { type: String },
-  finished: { type: Boolean, defaultValue: false }
+  finished: { type: Boolean, defaultValue: false },
 });
 
 Todos.attachSchema(Todos.schema);

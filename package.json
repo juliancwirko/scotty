@@ -45,7 +45,7 @@
       "meteor"
     ],
     "extends": [
-      "airbnb/base",
+      "airbnb",
       "plugin:meteor/recommended"
     ],
     "rules": {
@@ -58,7 +58,11 @@
       ],
       "meteor/template-names": [
         0
-      ]
+      ],
+      "import/no-unresolved": [
+        2, { "ignore": ["^meteor/"] }
+      ],
+      "no-underscore-dangle": ["error", { "allow": ["_id"] }]
     }
   },
   "postcss": {

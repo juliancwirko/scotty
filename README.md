@@ -28,7 +28,6 @@ $ meteor
 
 - Meteor Accounts for React stuff
 - Testing stuff
-- Better ESLint stuff
 - SEO stuff
 - Other cool stuff
 - Stuff
