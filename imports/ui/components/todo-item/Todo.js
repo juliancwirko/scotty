@@ -18,7 +18,7 @@ const Todo = (props) => {
   };
   return (
     <div className={finishedClass()}>
-      <input type="checkbox" checked={finished} value="" onChange={handleEdit} />
+      <input type="checkbox" checked={finished} onChange={handleEdit} />
       {message}
       <button type="button" onClick={handleRemove}>
         <i className="fa fa-times"></i>
@@ -33,7 +33,6 @@ Todo.propTypes = {
   dispatchCallRemoveTodo: React.PropTypes.func.isRequired,
   dispatchCallEditTodo: React.PropTypes.func.isRequired,
   finished: React.PropTypes.bool,
-
 };
 
 const mapStateToProps = () => ({});

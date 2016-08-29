@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
+    "bcrypt": "^0.8.7",
     "meteor-node-stubs": "~0.2.3",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
@@ -60,9 +61,21 @@
         0
       ],
       "import/no-unresolved": [
-        2, { "ignore": ["^meteor/"] }
+        2,
+        {
+          "ignore": [
+            "^meteor/"
+          ]
+        }
       ],
-      "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ]
     }
   },
   "postcss": {
