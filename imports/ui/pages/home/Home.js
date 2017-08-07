@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { array, func } from 'prop-types';
+import { Helmet } from 'react-helmet';
 import Todo from '../../components/todo-item/Todo';
-
 import { callAddTodo } from '../../../api/redux/async-actions';
 
 const Home = (props) => {
@@ -16,6 +17,11 @@ const Home = (props) => {
   };
   return (
     <div className="todo-wrapper">
+      <Helmet>
+        <title>Homepage</title>
+        <meta name="description" content="This is homepage. Just Helmet SSR demo" />
+        <meta property="og:title" content="This is homepage. Just Helmet SSR demo for OG" />
+      </Helmet>
       <div>
         <input
           type="text"
@@ -25,24 +31,26 @@ const Home = (props) => {
         />
       </div>
       <div>
-        {todos.map((t, i) => <Todo
-          todoId={t._id}
-          message={t.message}
-          finished={t.finished}
-          key={i}
-        />)}
+        {todos.map((t, i) => (
+          <Todo
+            todoId={t._id}
+            message={t.message}
+            finished={t.finished}
+            key={i}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
 Home.propTypes = {
-  todos: React.PropTypes.array.isRequired,
-  dispatchCallAddTodo: React.PropTypes.func.isRequired,
+  todos: array.isRequired,
+  dispatchCallAddTodo: func.isRequired,
 };
 
-const mapStateToProps = (state) => ({ todos: state.todos });
-const mapDispatchToProps = (dispatch) => ({
+const mapStateToProps = state => ({ todos: state.todos });
+const mapDispatchToProps = dispatch => ({
   dispatchCallAddTodo: data => dispatch(callAddTodo(data)),
 });
 

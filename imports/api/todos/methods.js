@@ -1,6 +1,6 @@
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
-import { Todos } from './todos.js';
+import { Todos } from './todos';
 
 export const todosGet = new ValidatedMethod({
   name: 'todos.methods.get',

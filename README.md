@@ -2,7 +2,8 @@
 
 - React
 - Redux
-- React Router
+- React Router 4
+- Server Side Rendering support with Redux state and Helmet
 - sGrid - Stylus/Flexbox
 
 Meteor React boilerplate with Redux.
@@ -28,6 +29,5 @@ $ meteor
 
 - Meteor Accounts for React stuff
 - Testing stuff
-- SEO stuff
 - Other cool stuff
 - Stuff

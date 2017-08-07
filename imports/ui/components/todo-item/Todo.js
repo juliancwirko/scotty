@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { string, func, bool } from 'prop-types';
 import { callRemoveTodo, callEditTodo } from '../../../api/redux/async-actions';
 
 const Todo = (props) => {
@@ -21,22 +22,26 @@ const Todo = (props) => {
       <input type="checkbox" checked={finished} onChange={handleEdit} />
       {message}
       <button type="button" onClick={handleRemove}>
-        <i className="fa fa-times"></i>
+        <i className="fa fa-times" />
       </button>
     </div>
   );
 };
 
 Todo.propTypes = {
-  message: React.PropTypes.string.isRequired,
-  todoId: React.PropTypes.string.isRequired,
-  dispatchCallRemoveTodo: React.PropTypes.func.isRequired,
-  dispatchCallEditTodo: React.PropTypes.func.isRequired,
-  finished: React.PropTypes.bool,
+  message: string.isRequired,
+  todoId: string.isRequired,
+  dispatchCallRemoveTodo: func.isRequired,
+  dispatchCallEditTodo: func.isRequired,
+  finished: bool,
+};
+
+Todo.defaultProps = {
+  finished: false,
 };
 
 const mapStateToProps = () => ({});
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   dispatchCallRemoveTodo: _id => dispatch(callRemoveTodo(_id)),
   dispatchCallEditTodo: _id => dispatch(callEditTodo(_id)),
 });

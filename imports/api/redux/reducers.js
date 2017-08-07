@@ -1,5 +1,5 @@
-import { ADD_TODO, REMOVE_TODO, EDIT_TODO, GET_ALL_TODO } from './actions';
 import { combineReducers } from 'redux';
+import { ADD_TODO, REMOVE_TODO, EDIT_TODO, GET_ALL_TODO } from './actions';
 
 const remove = (state, action) => {
   const elemToRemoveArray = state.slice().filter(item => item._id === action._id);

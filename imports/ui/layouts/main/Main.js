@@ -1,27 +1,24 @@
 import React from 'react';
-import { callGetAllTodo } from '../../../api/redux/async-actions';
 import { connect } from 'react-redux';
+import { element, oneOfType, arrayOf, object } from 'prop-types';
+import { Link } from 'react-router-dom';
 
-class Main extends React.Component {
-  componentDidMount() {
-    this.props.dispatch(callGetAllTodo());
-  }
-  render() {
-    return (
-      <div>
-        <section>
-          <div className="container">
-            {this.props.children}
-          </div>
-        </section>
+const Main = ({ children }) => (
+  <div>
+    <header className="header">
+      <Link to={{ pathname: '/' }}>Homepage</Link>
+      <Link to={{ pathname: '/subpage' }}>Subpage</Link>
+    </header>
+    <section>
+      <div className="container">
+        {children}
       </div>
-    );
-  }
-}
+    </section>
+  </div>
+);
 
 Main.propTypes = {
-  dispatch: React.PropTypes.func.isRequired,
-  children: React.PropTypes.element.isRequired,
+  children: oneOfType([arrayOf(element), object]).isRequired,
 };
 
 export default connect()(Main);

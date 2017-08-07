@@ -1,7 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-export const Todos = new Mongo.Collection('Todos');
+export const Todos = new Mongo.Collection('Todos'); // eslint-disable-line
 
 Todos.deny({
   insert() { return true; },
