@@ -11,6 +11,7 @@
     "autoprefixer": "^7.1.6",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
+    "core-js": "^2.5.1",
     "history": "^4.6.3",
     "meteor-node-stubs": "~0.2.11",
     "prop-types": "^15.6.0",
