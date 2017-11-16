@@ -23,7 +23,7 @@ const Subpage = (props) => {
 }
 
 Subpage.propTypes = {
-  testData: ['dasdsa', 'fdsfdsfds', 'dadasdsa'],
+  testData: array,
 };
 
 const mapStateToProps = state => ({ testData: ['dasdsa', 'fdsfdsfds', 'dadasdsa'] });
