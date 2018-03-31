@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import { array, func } from 'prop-types';
+import { array } from 'prop-types';
 
 const Subpage = (props) => {
   const { testData } = props;
@@ -20,13 +20,17 @@ const Subpage = (props) => {
       </div>
     </div>
   );
-}
+};
 
 Subpage.propTypes = {
   testData: array,
 };
 
-const mapStateToProps = state => ({ testData: ['dasdsa', 'fdsfdsfds', 'dadasdsa'] });
+Subpage.defaultProps = {
+  testData: array,
+};
+
+const mapStateToProps = state => ({ testData: ['Lorem ipsum dolor sit amet', 'consectetur adipisicing elit', 'sed do eiusmod tempor incididunt'] });
 const mapDispatchToProps = dispatch => ({
   // dispatchCallAddTodo: data => dispatch(callAddTodo(data)),
 });

@@ -1,6 +1,6 @@
 {
   "name": "scotty",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Meteor React boilerplate",
   "scripts": {
     "lint": "eslint .",
@@ -8,14 +8,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.0.0-beta.40",
-    "@babel/runtime": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/runtime": "^7.0.0-beta.42",
     "autoprefixer": "^7.1.6",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
     "core-js": "^2.5.1",
     "history": "^4.6.3",
-    "meteor-node-stubs": "~0.2.11",
+    "meteor-node-stubs": "0.3.3",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
@@ -36,7 +37,7 @@
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-meteor": "^4.1.0",
+    "eslint-plugin-meteor": "^4.2.0",
     "eslint-plugin-react": "^7.1.0"
   },
   "repository": {
@@ -101,6 +102,12 @@
           "allow": [
             "_id"
           ]
+        }
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "args": "none"
         }
       ]
     }
