@@ -24,7 +24,7 @@ aldeed:simple-schema
 mdg:validated-method
 juliancwirko:postcss
 static-html@1.1.12
-stylus@2.513.13
+stylus@2.513.14
 shell-server@0.3.1
 dynamic-import@0.3.0
 server-render@0.3.0
