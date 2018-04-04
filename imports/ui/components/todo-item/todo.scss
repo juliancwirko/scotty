@@ -1,0 +1,25 @@
+.todo-item {
+  padding: rem-calc(10) rem-calc(25);
+  font-size: rem-calc(18);
+  button {
+    visibility: hidden;
+    background-color: transparent;
+    color: $color-main-dark;
+    padding: rem-calc(5);
+    border: 0;
+    margin-left: rem-calc(5);
+    outline: none;
+  }
+  &:hover button {
+    visibility: visible;
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    margin-right: rem-calc(5);
+    cursor: pointer;
+  }
+}
+
+.todo-finished {
+  text-decoration: line-through;
+}

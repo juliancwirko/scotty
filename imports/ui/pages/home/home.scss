@@ -1,0 +1,15 @@
+.add-todo-input {
+	padding: rem-calc(15) rem-calc(25);
+	border: rem-calc(1) solid #010101;
+	width: 100%;
+	margin-bottom: rem-calc(25);
+	font-size: rem-calc(18);
+	box-shadow: 0 0 rem-calc(8) 0 rgba(0,0,0,0.1);
+	outline: none;
+}
+
+.todo-wrapper {
+  width: 600px;
+  margin: 0 auto;
+	padding: rem-calc(50) rem-calc(15);
+}

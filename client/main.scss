@@ -1,0 +1,14 @@
+$color-main-light: #fff;
+$color-main-dark: #000;
+$color-main-contrast: #2a3647;
+$color-main-variant: #4d4d4d;
+
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@import '../imports/ui/components/todo-item/todo';
+@import '../imports/ui/pages/subpage/subpage';
+@import '../imports/ui/pages/home/home';
+@import '../imports/ui/layouts/main/main';

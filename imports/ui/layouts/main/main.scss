@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.header {
+	background-color: $color-main-variant;
+	color: $color-main-light;
+  padding: 20px;
+  a {
+    color: $color-main-light;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
