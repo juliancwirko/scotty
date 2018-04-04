@@ -4,8 +4,8 @@ $color-main-contrast: #2a3647;
 $color-main-variant: #4d4d4d;
 
 @function rem-calc($size) {
-  $remSize: $size / 16; 
-  @return #{$remSize}rem; 
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
 }
 
 @import '../imports/ui/components/todo-item/todo';
